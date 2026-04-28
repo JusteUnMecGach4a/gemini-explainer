@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index du Site - Gemini Explainer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .index-list {
+            list-style: none;
+            margin-top: 3rem;
+        }
+        .index-item {
+            background: var(--bg-card);
+            margin-bottom: 1rem;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s;
+        }
+        .index-item:hover {
+            transform: scale(1.02);
+            border-color: var(--primary);
+        }
+        .index-item a {
+            display: block;
+            padding: 1.5rem;
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .index-item span {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 400;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">Gemini<span>Explainer</span></div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="comparison.html">Comparaison</a></li>
+            <li><a href="sitemap.html">Index</a></li>
+        </ul>
+    </nav>
+
+    <header style="padding-top: 150px; text-align: center;">
+        <div class="container">
+            <h1 class="animate-text">Index <span>Complet</span></h1>
+            <p class="animate-text-delay">Explorez toutes les facettes de l'intelligence artificielle.</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <ul class="index-list">
+                <li class="index-item fade-in">
+                    <a href="index.html">Accueil <span>Présentation de Gemini et de la multimodalité native.</span></a>
+                </li>
+                <li class="index-item fade-in">
+                    <a href="comparison.html">Comparaison des Modèles <span>Gemini vs GPT-4, Claude et Llama.</span></a>
+                </li>
+                <li class="index-item fade-in">
+                    <a href="history.html">Histoire de l'IA <span>Des origines à aujourd'hui.</span></a>
+                </li>
+                <li class="index-item fade-in">
+                    <a href="ethics.html">Éthique et IA <span>Les défis et la sécurité des modèles.</span></a>
+                </li>
+                <li class="index-item fade-in">
+                    <a href="medicine.html">IA et Médecine <span>Révolutionner la santé.</span></a>
+                </li>
+                <li class="index-item fade-in">
+                    <a href="education.html">IA et Éducation <span>Apprentissage personnalisé.</span></a>
+                </li>
+                <li class="index-item fade-in">
+                    <a href="generative.html">IA Générative <span>Texte, Image, Vidéo et Audio.</span></a>
+                </li>
+                <li class="index-item fade-in">
+                    <a href="work.html">Futur du Travail <span>L'impact de l'automatisation.</span></a>
+                </li>
+                <li class="index-item fade-in">
+                    <a href="nlp.html">Langage Naturel (NLP) <span>Compréhension et génération de texte.</span></a>
+                </li>
+                <li class="index-item fade-in">
+                    <a href="vision.html">Vision par Ordinateur <span>Analyse d'images et vidéos.</span></a>
+                </li>
+                <li class="index-item fade-in">
+                    <a href="robotics.html">IA et Robotique <span>Interaction physique.</span></a>
+                </li>
+                <li class="index-item fade-in">
+                    <a href="reinforcement.html">Apprentissage par Renforcement <span>Apprendre par la récompense.</span></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Gemini Explainer. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
