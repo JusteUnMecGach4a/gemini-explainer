@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparaison des Modèles - Gemini Explainer</title>
+    <meta name="description" content="Comparez Gemini avec GPT-4, Claude 3 et Llama 3. Analyse des capacités, de la fenêtre de contexte et de la multimodalité.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .comparison-table-wrapper {
+            overflow-x: auto;
+            margin-top: 3rem;
+            background: var(--bg-card);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: var(--text-main);
+        }
+        th, td {
+            padding: 1.5rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        th {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+        .model-name {
+            font-weight: 800;
+            font-size: 1.1rem;
+        }
+        .highlight-gemini {
+            background: rgba(66, 133, 244, 0.1);
+            color: var(--secondary);
+        }
+        .check { color: #10b981; }
+        .cross { color: #ef4444; }
+        .badge {
+            padding: 0.2rem 0.6rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            background: rgba(255,255,255,0.1);
+        }
+        .badge-premium { background: var(--gradient); color: white; }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">Gemini<span>Explainer</span></div>
+        <ul>
+            <li><a href="index.html#hero">Accueil</a></li>
+            <li><a href="index.html#how-it-works">Fonctionnement</a></li>
+            <li><a href="comparison.html">Comparaison</a></li>
+            <li><a href="index.html#models">Modèles</a></li>
+        </ul>
+    </nav>
+
+    <section id="comparison-hero">
+        <div class="container">
+            <h1 class="animate-text">Gemini vs <span>Le Reste du Monde</span></h1>
+            <p class="animate-text-delay">Comment Gemini se positionne-t-il face aux autres géants de l'IA ? Une analyse objective basée sur les capacités techniques.</p>
+            
+            <div class="comparison-table-wrapper fade-in">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Caractéristique</th>
+                            <th class="highlight-gemini">Gemini 1.5 Pro</th>
+                            <th>GPT-4o</th>
+                            <th>Claude 3.5 Sonnet</th>
+                            <th>Llama 3 (70B)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fenêtre de Contexte</td>
+                            <td class="highlight-gemini"><span class="badge badge-premium">Jusqu'à 2M</span></td>
+                            <td>128k</td>
+                            <td>200k</td>
+                            <td>8k - 128k</td>
+                        </tr>
+                        <tr>
+                            <td>Multimodalité Native</td>
+                            <td class="highlight-gemini"><span class="check">✔</span> Complète</td>
+                            <td><span class="check">✔</span> Oui</td>
+                            <td><span class="check">✔</span> Vision seule</td>
+                            <td><span class="cross">✘</span> Non (Texte)</td>
+                        </tr>
+                        <tr>
+                            <td>Raisonnement Vidéo</td>
+                            <td class="highlight-gemini"><span class="check">✔</span> Avancé</td>
+                            <td><span class="check">✔</span> Limité</td>
+                            <td><span class="cross">✘</span> Non</td>
+                            <td><span class="cross">✘</span> Non</td>
+                        </tr>
+                        <tr>
+                            <td>Écosystème</td>
+                            <td class="highlight-gemini">Google Workspace / Cloud</td>
+                            <td>Microsoft / OpenAI</td>
+                            <td>AWS / GCP</td>
+                            <td>Open Source / Meta</td>
+                        </tr>
+                        <tr>
+                            <td>Points Forts</td>
+                            <td class="highlight-gemini">Contexte immense, Vidéo</td>
+                            <td>Polyvalence, Écosystème</td>
+                            <td>Écriture naturelle, Code</td>
+                            <td>Performance/Coût, Local</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="deep-dive">
+        <div class="container">
+            <h2 class="section-title">Pourquoi ces différences ?</h2>
+            <div class="grid">
+                <div class="card fade-in">
+                    <h3>L'avantage du Contexte</h3>
+                    <p>La capacité de Gemini à traiter 2 millions de tokens permet de charger des bases de données entières, ce que GPT-4 ou Claude ne peuvent pas encore faire sans découper les données (RAG).</p>
+                </div>
+                <div class="card fade-in">
+                    <h3>Intégration Native</h3>
+                    <p>Gemini est le fruit d'une recherche unifiée chez Google DeepMind, fusionnant les capacités de vision et de langage au cœur même de l'architecture du modèle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Gemini Explainer. Créé avec ❤️ pour explorer le futur.</p>
+            <div class="social-links">
+                <a href="index.html">Retour à l'accueil</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
