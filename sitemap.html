@@ -11,45 +11,45 @@
     <style>
         .index-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.2rem;
+            margin-top: 2rem;
         }
         .index-item {
             background: var(--bg-card);
-            border-radius: 15px;
+            border-radius: 12px;
             overflow: hidden;
             border: 1px solid rgba(255, 255, 255, 0.05);
             transition: all 0.3s;
         }
         .index-item:hover {
-            transform: translateY(-5px);
+            transform: translateY(-3px);
             border-color: var(--primary);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
         .index-item a {
             display: block;
-            padding: 1.5rem;
+            padding: 1.2rem;
             color: var(--text-main);
             text-decoration: none;
         }
         .index-item h4 {
             font-family: var(--font-heading);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.3rem;
             color: var(--secondary);
+            font-size: 1rem;
         }
         .index-item p {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             color: var(--text-muted);
-            line-height: 1.4;
+            line-height: 1.3;
         }
         .category-title {
-            margin-top: 4rem;
+            margin-top: 3.5rem;
             font-family: var(--font-heading);
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             border-bottom: 2px solid var(--primary);
             display: inline-block;
-            padding-bottom: 0.5rem;
+            padding-bottom: 0.4rem;
         }
     </style>
 </head>
@@ -65,8 +65,8 @@
 
     <header style="padding-top: 150px; text-align: center;">
         <div class="container">
-            <h1 class="animate-text">Index <span>Global</span></h1>
-            <p class="animate-text-delay">Explorez plus de 20 pages dédiées à l'IA et au futur.</p>
+            <h1 class="animate-text">Index <span>Encyclopédique</span></h1>
+            <p class="animate-text-delay">Plus de 30 pages explorant chaque recoin de l'IA.</p>
         </div>
     </header>
 
@@ -75,82 +75,120 @@
             <h3 class="category-title">Cœur du Projet</h3>
             <div class="index-grid">
                 <div class="index-item fade-in">
-                    <a href="index.html"><h4>Accueil</h4><p>Découvrez Gemini et la multimodalité native.</p></a>
+                    <a href="index.html"><h4>Accueil</h4><p>Le point de départ.</p></a>
                 </div>
                 <div class="index-item fade-in">
-                    <a href="pages/comparison.html"><h4>Comparaison</h4><p>Gemini vs GPT-4, Claude et Llama.</p></a>
-                </div>
-            </div>
-
-            <h3 class="category-title">Fondamentaux & Histoire</h3>
-            <div class="index-grid">
-                <div class="index-item fade-in">
-                    <a href="pages/history.html"><h4>Histoire de l'IA</h4><p>Des débuts à l'explosion actuelle.</p></a>
-                </div>
-                <div class="index-item fade-in">
-                    <a href="pages/ethics.html"><h4>Éthique</h4><p>Biais, transparence et sécurité.</p></a>
-                </div>
-                <div class="index-item fade-in">
-                    <a href="pages/nlp.html"><h4>NLP</h4><p>Le traitement du langage naturel.</p></a>
-                </div>
-                <div class="index-item fade-in">
-                    <a href="pages/vision.html"><h4>Computer Vision</h4><p>Comment les machines voient.</p></a>
-                </div>
-                <div class="index-item fade-in">
-                    <a href="pages/reinforcement.html"><h4>Reinforcement</h4><p>Apprendre par la récompense.</p></a>
+                    <a href="pages/comparison.html"><h4>Comparaison</h4><p>Modèles face-à-face.</p></a>
                 </div>
             </div>
 
-            <h3 class="category-title">IA par Secteur</h3>
+            <h3 class="category-title">Théorie & Fondations</h3>
             <div class="index-grid">
                 <div class="index-item fade-in">
-                    <a href="pages/medicine.html"><h4>Médecine</h4><p>Diagnostics et recherche pharma.</p></a>
+                    <a href="pages/history.html"><h4>Histoire</h4></a>
                 </div>
                 <div class="index-item fade-in">
-                    <a href="pages/education.html"><h4>Éducation</h4><p>Apprentissage personnalisé.</p></a>
+                    <a href="pages/ethics.html"><h4>Éthique</h4></a>
                 </div>
                 <div class="index-item fade-in">
-                    <a href="pages/finance.html"><h4>Finance</h4><p>Trading et gestion des risques.</p></a>
+                    <a href="pages/nlp.html"><h4>NLP</h4></a>
                 </div>
                 <div class="index-item fade-in">
-                    <a href="pages/law.html"><h4>Droit</h4><p>Analyse juridique et contrats.</p></a>
+                    <a href="pages/vision.html"><h4>Vision</h4></a>
                 </div>
                 <div class="index-item fade-in">
-                    <a href="pages/sports.html"><h4>Sport</h4><p>Performance et stratégie.</p></a>
+                    <a href="pages/reinforcement.html"><h4>Renforcement</h4></a>
                 </div>
                 <div class="index-item fade-in">
-                    <a href="pages/music.html"><h4>Musique</h4><p>Composition et mixage.</p></a>
-                </div>
-                <div class="index-item fade-in">
-                    <a href="pages/art.html"><h4>Art</h4><p>Créativité assistée par IA.</p></a>
-                </div>
-                <div class="index-item fade-in">
-                    <a href="pages/space.html"><h4>Espace</h4><p>Exploration et astronomie.</p></a>
+                    <a href="pages/xai.html"><h4>XAI (Explicable)</h4></a>
                 </div>
             </div>
 
-            <h3 class="category-title">Futur & Technologies</h3>
+            <h3 class="category-title">IA & Société</h3>
             <div class="index-grid">
                 <div class="index-item fade-in">
-                    <a href="pages/generative.html"><h4>IA Générative</h4><p>Texte, image et vidéo.</p></a>
+                    <a href="pages/work.html"><h4>Travail</h4></a>
                 </div>
                 <div class="index-item fade-in">
-                    <a href="pages/work.html"><h4>Travail</h4><p>Impact de l'automatisation.</p></a>
+                    <a href="pages/education.html"><h4>Éducation</h4></a>
                 </div>
                 <div class="index-item fade-in">
-                    <a href="pages/climate.html"><h4>Climat</h4><p>Défis environnementaux.</p></a>
+                    <a href="pages/cybersecurity.html"><h4>Sécurité</h4></a>
                 </div>
                 <div class="index-item fade-in">
-                    <a href="pages/robotics.html"><h4>Robotique</h4><p>Interaction physique.</p></a>
+                    <a href="pages/journalism.html"><h4>Journalisme</h4></a>
                 </div>
                 <div class="index-item fade-in">
-                    <a href="pages/edge.html"><h4>Edge AI</h4><p>IA locale et IoT.</p></a>
+                    <a href="pages/law.html"><h4>Droit</h4></a>
                 </div>
                 <div class="index-item fade-in">
-                    <a href="pages/quantum.html"><h4>IA Quantique</h4><p>Calcul de nouvelle génération.</p></a>
+                    <a href="pages/psychology.html"><h4>Psychologie</h4></a>
+                </div>
+            </div>
+
+            <h3 class="category-title">Domaines d'Application</h3>
+            <div class="index-grid">
+                <div class="index-item fade-in">
+                    <a href="pages/medicine.html"><h4>Médecine</h4></a>
                 </div>
                 <div class="index-item fade-in">
-                    <a href="pages/agi.html"><h4>AGI</h4><p>L'intelligence artificielle générale.</p></a>
+                    <a href="pages/agriculture.html"><h4>Agriculture</h4></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/finance.html"><h4>Finance</h4></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/retail.html"><h4>Commerce</h4></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/transportation.html"><h4>Transport</h4></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/space.html"><h4>Espace</h4></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/physics.html"><h4>Physique</h4></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/sports.html"><h4>Sport</h4></a>
+                </div>
+            </div>
+
+            <h3 class="category-title">Créativité & Médias</h3>
+            <div class="index-grid">
+                <div class="index-item fade-in">
+                    <a href="pages/generative.html"><h4>Génératif</h4></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/art.html"><h4>Art</h4></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/music.html"><h4>Musique</h4></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/gaming.html"><h4>Gaming</h4></a>
+                </div>
+            </div>
+
+            <h3 class="category-title">Le Futur Technologique</h3>
+            <div class="index-grid">
+                <div class="index-item fade-in">
+                    <a href="pages/agi.html"><h4>AGI</h4></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/singularity.html"><h4>Singularité</h4></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/quantum.html"><h4>Quantique</h4></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/robotics.html"><h4>Robotique</h4></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/edge.html"><h4>Edge AI</h4></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/climate.html"><h4>Climat</h4></a>
                 </div>
             </div>
         </div>
