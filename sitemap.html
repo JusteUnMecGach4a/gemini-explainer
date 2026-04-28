@@ -9,35 +9,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
-        .index-list {
-            list-style: none;
+        .index-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
             margin-top: 3rem;
         }
         .index-item {
             background: var(--bg-card);
-            margin-bottom: 1rem;
             border-radius: 15px;
             overflow: hidden;
             border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: transform 0.3s;
+            transition: all 0.3s;
         }
         .index-item:hover {
-            transform: scale(1.02);
+            transform: translateY(-5px);
             border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
         .index-item a {
             display: block;
             padding: 1.5rem;
             color: var(--text-main);
             text-decoration: none;
-            font-weight: 600;
         }
-        .index-item span {
-            display: block;
-            font-size: 0.9rem;
+        .index-item h4 {
+            font-family: var(--font-heading);
+            margin-bottom: 0.5rem;
+            color: var(--secondary);
+        }
+        .index-item p {
+            font-size: 0.85rem;
             color: var(--text-muted);
-            font-weight: 400;
-            margin-top: 0.5rem;
+            line-height: 1.4;
+        }
+        .category-title {
+            margin-top: 4rem;
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--primary);
+            display: inline-block;
+            padding-bottom: 0.5rem;
         }
     </style>
 </head>
@@ -46,58 +58,101 @@
         <div class="logo">Gemini<span>Explainer</span></div>
         <ul>
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="comparison.html">Comparaison</a></li>
+            <li><a href="pages/comparison.html">Comparaison</a></li>
             <li><a href="sitemap.html">Index</a></li>
         </ul>
     </nav>
 
     <header style="padding-top: 150px; text-align: center;">
         <div class="container">
-            <h1 class="animate-text">Index <span>Complet</span></h1>
-            <p class="animate-text-delay">Explorez toutes les facettes de l'intelligence artificielle.</p>
+            <h1 class="animate-text">Index <span>Global</span></h1>
+            <p class="animate-text-delay">Explorez plus de 20 pages dédiées à l'IA et au futur.</p>
         </div>
     </header>
 
     <section>
         <div class="container">
-            <ul class="index-list">
-                <li class="index-item fade-in">
-                    <a href="index.html">Accueil <span>Présentation de Gemini et de la multimodalité native.</span></a>
-                </li>
-                <li class="index-item fade-in">
-                    <a href="comparison.html">Comparaison des Modèles <span>Gemini vs GPT-4, Claude et Llama.</span></a>
-                </li>
-                <li class="index-item fade-in">
-                    <a href="history.html">Histoire de l'IA <span>Des origines à aujourd'hui.</span></a>
-                </li>
-                <li class="index-item fade-in">
-                    <a href="ethics.html">Éthique et IA <span>Les défis et la sécurité des modèles.</span></a>
-                </li>
-                <li class="index-item fade-in">
-                    <a href="medicine.html">IA et Médecine <span>Révolutionner la santé.</span></a>
-                </li>
-                <li class="index-item fade-in">
-                    <a href="education.html">IA et Éducation <span>Apprentissage personnalisé.</span></a>
-                </li>
-                <li class="index-item fade-in">
-                    <a href="generative.html">IA Générative <span>Texte, Image, Vidéo et Audio.</span></a>
-                </li>
-                <li class="index-item fade-in">
-                    <a href="work.html">Futur du Travail <span>L'impact de l'automatisation.</span></a>
-                </li>
-                <li class="index-item fade-in">
-                    <a href="nlp.html">Langage Naturel (NLP) <span>Compréhension et génération de texte.</span></a>
-                </li>
-                <li class="index-item fade-in">
-                    <a href="vision.html">Vision par Ordinateur <span>Analyse d'images et vidéos.</span></a>
-                </li>
-                <li class="index-item fade-in">
-                    <a href="robotics.html">IA et Robotique <span>Interaction physique.</span></a>
-                </li>
-                <li class="index-item fade-in">
-                    <a href="reinforcement.html">Apprentissage par Renforcement <span>Apprendre par la récompense.</span></a>
-                </li>
-            </ul>
+            <h3 class="category-title">Cœur du Projet</h3>
+            <div class="index-grid">
+                <div class="index-item fade-in">
+                    <a href="index.html"><h4>Accueil</h4><p>Découvrez Gemini et la multimodalité native.</p></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/comparison.html"><h4>Comparaison</h4><p>Gemini vs GPT-4, Claude et Llama.</p></a>
+                </div>
+            </div>
+
+            <h3 class="category-title">Fondamentaux & Histoire</h3>
+            <div class="index-grid">
+                <div class="index-item fade-in">
+                    <a href="pages/history.html"><h4>Histoire de l'IA</h4><p>Des débuts à l'explosion actuelle.</p></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/ethics.html"><h4>Éthique</h4><p>Biais, transparence et sécurité.</p></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/nlp.html"><h4>NLP</h4><p>Le traitement du langage naturel.</p></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/vision.html"><h4>Computer Vision</h4><p>Comment les machines voient.</p></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/reinforcement.html"><h4>Reinforcement</h4><p>Apprendre par la récompense.</p></a>
+                </div>
+            </div>
+
+            <h3 class="category-title">IA par Secteur</h3>
+            <div class="index-grid">
+                <div class="index-item fade-in">
+                    <a href="pages/medicine.html"><h4>Médecine</h4><p>Diagnostics et recherche pharma.</p></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/education.html"><h4>Éducation</h4><p>Apprentissage personnalisé.</p></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/finance.html"><h4>Finance</h4><p>Trading et gestion des risques.</p></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/law.html"><h4>Droit</h4><p>Analyse juridique et contrats.</p></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/sports.html"><h4>Sport</h4><p>Performance et stratégie.</p></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/music.html"><h4>Musique</h4><p>Composition et mixage.</p></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/art.html"><h4>Art</h4><p>Créativité assistée par IA.</p></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/space.html"><h4>Espace</h4><p>Exploration et astronomie.</p></a>
+                </div>
+            </div>
+
+            <h3 class="category-title">Futur & Technologies</h3>
+            <div class="index-grid">
+                <div class="index-item fade-in">
+                    <a href="pages/generative.html"><h4>IA Générative</h4><p>Texte, image et vidéo.</p></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/work.html"><h4>Travail</h4><p>Impact de l'automatisation.</p></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/climate.html"><h4>Climat</h4><p>Défis environnementaux.</p></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/robotics.html"><h4>Robotique</h4><p>Interaction physique.</p></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/edge.html"><h4>Edge AI</h4><p>IA locale et IoT.</p></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/quantum.html"><h4>IA Quantique</h4><p>Calcul de nouvelle génération.</p></a>
+                </div>
+                <div class="index-item fade-in">
+                    <a href="pages/agi.html"><h4>AGI</h4><p>L'intelligence artificielle générale.</p></a>
+                </div>
+            </div>
         </div>
     </section>
 
