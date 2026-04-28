@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprendre Gemini - L'IA Multimodale de Google</title>
+    <meta name="description" content="Découvrez comment fonctionne Gemini, le modèle d'IA le plus performant de Google. Multimodalité, raisonnement complexe et fenêtres de contexte étendues.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">Gemini<span>Explainer</span></div>
+        <ul>
+            <li><a href="#hero">Accueil</a></li>
+            <li><a href="#how-it-works">Fonctionnement</a></li>
+            <li><a href="#capabilities">Capacités</a></li>
+            <li><a href="#models">Modèles</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1 class="animate-text">L'ère de l'IA <span>Multimodale</span></h1>
+            <p class="animate-text-delay">Gemini n'est pas juste un modèle de langage. C'est une intelligence conçue nativement pour comprendre le monde tel que nous le percevons : à travers le texte, l'image, l'audio et la vidéo.</p>
+            <div class="hero-btns animate-text-delay-2">
+                <a href="#how-it-works" class="btn-primary">Découvrir le fonctionnement</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="gemini-sphere"></div>
+        </div>
+    </section>
+
+    <section id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Comment ça marche ?</h2>
+            <div class="grid">
+                <div class="card fade-in">
+                    <div class="card-icon">🧠</div>
+                    <h3>Architecture Native</h3>
+                    <p>Contrairement aux modèles précédents qui assemblent différents composants, Gemini est <strong>nativement multimodal</strong>. Il a été entraîné dès le départ sur différents types de données simultanément.</p>
+                </div>
+                <div class="card fade-in">
+                    <div class="card-icon">👁️</div>
+                    <h3>Raisonnement Croisé</h3>
+                    <p>Il peut raisonner de manière fluide entre les modalités. Par exemple, il peut regarder une vidéo de physique et expliquer les concepts mathématiques écrits au tableau en temps réel.</p>
+                </div>
+                <div class="card fade-in">
+                    <div class="card-icon">📚</div>
+                    <h3>Fenêtre de Contexte</h3>
+                    <p>Avec une capacité allant jusqu'à <strong>2 millions de tokens</strong>, Gemini peut traiter des bibliothèques entières, des heures de vidéo ou des bases de code massives en une seule fois.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="capabilities" class="dark-bg">
+        <div class="container">
+            <h2 class="section-title">Des capacités révolutionnaires</h2>
+            <div class="feature-row">
+                <div class="feature-text fade-in-left">
+                    <h3>Compréhension Vidéo</h3>
+                    <p>Gemini peut analyser des nuances subtiles dans une vidéo, identifier des événements spécifiques et répondre à des questions sur le contenu visuel et auditif avec une précision chirurgicale.</p>
+                </div>
+                <div class="feature-visual fade-in-right">
+                    <div class="visual-placeholder code-anim">
+                        <pre><code>// Analyse de flux vidéo
+gemini.analyze(videoStream)
+  .then(events => console.log(events));</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="models">
+        <div class="container">
+            <h2 class="section-title">La famille Gemini</h2>
+            <div class="model-toggle">
+                <div class="model-card" data-model="ultra">
+                    <h4>Gemini Ultra</h4>
+                    <p>Le plus capable. Conçu pour les tâches hautement complexes et le raisonnement de pointe.</p>
+                </div>
+                <div class="model-card active" data-model="pro">
+                    <h4>Gemini Pro</h4>
+                    <p>Le meilleur compromis. Optimisé pour une large gamme de tâches avec une efficacité redoutable.</p>
+                </div>
+                <div class="model-card" data-model="flash">
+                    <h4>Gemini Flash</h4>
+                    <p>Le plus rapide. Conçu pour la vitesse et l'efficacité à grande échelle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Gemini Explainer. Créé avec ❤️ pour explorer le futur.</p>
+            <div class="social-links">
+                <a href="#">GitHub</a>
+                <a href="#">Documentation</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
